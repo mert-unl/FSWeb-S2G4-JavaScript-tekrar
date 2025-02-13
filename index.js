@@ -127,10 +127,16 @@ for(let i = 1 ; i<sayilar.length ; i++){
 console.log(enbuyuk)
 console.log(enkucuk)
 
-
 // 3b çözümü:
 
-/* kodlar buraya */
+ucetambolunenler = []
+
+sayilar.forEach(num => {
+ if( num % 3 === 0){
+  ucetambolunenler.push(num)
+ }})
+
+ console.log(ucetambolunenler)
 
 // 3c çözümü:
 
