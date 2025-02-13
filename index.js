@@ -56,9 +56,9 @@ function CemberinCevresi(yarıçap) {
   return 2 * pi *yarıçap
 }
 
-console.log(CemberinCevresi(5))
-
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
+
+console.log(CemberinCevresi(5))
 
 /* 	GÖREV 2:  
 - CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
@@ -93,7 +93,11 @@ console.log(CemberinAlani(15,pi))
 		💡 İPUCU: Tekrar edilen sayıları ve kaç kere tekrar edildiğini kaydetmek için bir nesne tanımlamalısınız, bu görevi yapabilmek için en az 2 kere döngü yazmalısınız. Birinci döngüde hangi sayının kaç kere tekrar edildiğini tespit edip, 2. döngüde stringi oluşturup verilen diziye aktarmalısınız.
 */
 
+
+
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
+
+   console.log(sayilar.length)
 
 let ucetambolunenler,
   enkucuk,
@@ -105,7 +109,24 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+enkucuk = sayilar[0]
+enbuyuk = sayilar[0]
+
+  
+for(let i = 1 ; i<sayilar.length ; i++){
+
+  if(enbuyuk < sayilar[i]){
+    enbuyuk = sayilar[i]
+  } 
+  if(enkucuk > sayilar[i]){
+
+    enkucuk = sayilar[i]
+  }
+}
+
+console.log(enbuyuk)
+console.log(enkucuk)
+
 
 // 3b çözümü:
 
