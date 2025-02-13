@@ -140,13 +140,14 @@ sayilar.forEach(num => {
 
 // 3c çözümü:
 
-      
  ucebolunenlerintoplami = ucetambolunenler.reduce((toplam,i) => toplam + i)
  console.log(ucebolunenlerintoplami)
 
 // 3d çözümü
 
-/* kodlar buraya */
+besyuzdenkucuksayilar = sayilar.filter((sayi)=> sayi<500)
+console.log(besyuzdenkucuksayilar)  
+
 
 // 3e çözümü
 
