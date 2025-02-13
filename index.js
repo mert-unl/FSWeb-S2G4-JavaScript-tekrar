@@ -148,14 +148,32 @@ sayilar.forEach(num => {
 besyuzdenkucuksayilar = sayilar.filter((sayi)=> sayi<500)
 console.log(besyuzdenkucuksayilar)  
 
-
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a - b)
+console.log("buradasın")
+console.log(siralisayilar)
 
 // 3f çözümü
+tekraredensayilar = [];
+const obje = {}; 
+for (let i = 0; i < sayilar.length; i++) {
+  let sayi = sayilar[i];
 
-/* kodlar buraya */
+  if (obje[sayi]) {
+    obje[sayi]++; 
+  } else {
+    obje[sayi] = 1; 
+  }
+}
+
+for (let key in obje) {
+  if (obje[key] > 1) { 
+    tekraredensayilar.push(`${key} sayısı ${obje[key]} kere tekrar edilmiştir.`);
+  }
+}
+
+console.log(tekraredensayilar)
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
