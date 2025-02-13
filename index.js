@@ -140,7 +140,9 @@ sayilar.forEach(num => {
 
 // 3c çözümü:
 
-/* kodlar buraya */
+      
+ ucebolunenlerintoplami = ucetambolunenler.reduce((toplam,i) => toplam + i)
+ console.log(ucebolunenlerintoplami)
 
 // 3d çözümü
 
